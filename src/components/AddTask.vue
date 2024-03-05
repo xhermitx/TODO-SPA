@@ -33,6 +33,8 @@ const newTask = ref({
 
 const onSubmit = () => {
   taskList.addTask(newTask.value);
+  newTask.value.taskName = "";
+  newTask.value.taskDeadline = "";
 };
 </script>
 
